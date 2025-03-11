@@ -7,11 +7,13 @@ void main() {
 }
 
 class PhotoThemeApp extends StatefulWidget {
+  const PhotoThemeApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyAppState extends State<PhotoThemeApp> {
   final ThemeProvider _themeProvider = ThemeProvider();
 
   @override
@@ -39,7 +41,7 @@ class _MyAppState extends State<MyApp> {
 class HomeScreen extends StatelessWidget {
   final ThemeProvider themeProvider;
 
-  HomeScreen({required this.themeProvider});
+  const HomeScreen({super.key, required this.themeProvider});
 
   @override
   Widget build(BuildContext context) {
