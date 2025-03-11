@@ -3,10 +3,10 @@ import 'photo_picker.dart';
 import 'theme_provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(PhotoThemeApp());
 }
 
-class MyApp extends StatefulWidget {
+class PhotoThemeApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
 }
